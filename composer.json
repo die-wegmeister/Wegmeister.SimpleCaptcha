@@ -3,6 +3,14 @@
     "type": "neos-package",
     "description": "This package adds a simple captcha for forms by checking the time value and a random string.",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Klix",
+            "email": "benjamin.klix@die-wegmeister.com",
+            "homepage": "https://www.die-wegmeister.com/",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "neos/form": "^4.0",
         "php": "~7.0"
