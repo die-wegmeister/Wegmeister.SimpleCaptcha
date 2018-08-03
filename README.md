@@ -1,4 +1,4 @@
-# Wegmeister.Recaptcha
+# Wegmeister.SimpleCaptcha
 *Tested with Flow 4.0.x*
 
 Neos-Plugin to integrate a simple time based Captcha into Forms
@@ -32,7 +32,7 @@ renderables:
         # optionally change the translationPackage
         # if you want to adjust the error message
         #renderingOptions:
-        #  validationErrorTranslationPackage: 'Wegmeister.Recaptcha'
+        #  validationErrorTranslationPackage: 'Wegmeister.SimpleCaptcha'
 finishers:
   -
    <Your finishers here>
