@@ -1,0 +1,7 @@
+prototype(Wegmeister.SimpleCaptcha:SimpleCaptcha.Definition) < prototype(Neos.Form.Builder:FormElement.Definition) {
+	formElementType = 'Wegmeister.SimpleCaptcha:SimpleCaptcha'
+
+	properties {
+		waitTime = ${null}
+	}
+}

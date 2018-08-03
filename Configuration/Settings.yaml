@@ -1,0 +1,25 @@
+Neos:
+  Form:
+    presets:
+      default:
+        formElementTypes:
+          'Wegmeister.SimpleCaptcha:SimpleCaptcha':
+            superTypes:
+              'Neos.Form:FormElement': true
+              'Neos.Form:TextMixin': true
+            implementationClassName: Wegmeister\SimpleCaptcha\FormElements\SimpleCaptcha
+            renderingOptions:
+              layoutPathPattern: 'resource://{@package}/Private/Form/Layouts/{@type}.html'
+              validationErrorTranslationPackage: Wegmeister.SimpleCaptcha
+            # You can set a custom wait time (in seconds) for each SimpleCaptcha (time before formular can be submitted).
+            properties:
+              waitTime: 3
+  Neos:
+    fusion:
+      autoInclude:
+        'Wegmeister.SimpleCaptcha': true
+    userInterface:
+      translation:
+        autoInclude:
+          'Wegmeister.SimpleCaptcha':
+            - 'NodeTypes/*'

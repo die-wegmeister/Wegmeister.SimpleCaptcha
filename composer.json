@@ -1,0 +1,19 @@
+{
+    "name": "wegmeister/simplecaptcha",
+    "type": "neos-package",
+    "description": "This package adds a simple captcha for forms by checking the time value and a random string.",
+    "require": {
+        "neos/form": "^4.0",
+        "php": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wegmeister\\SimpleCaptcha\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Wegmeister.SimpleCaptcha"
+        }
+    }
+}

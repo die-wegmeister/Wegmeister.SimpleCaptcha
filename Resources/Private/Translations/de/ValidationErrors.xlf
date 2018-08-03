@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" source-language="en" target-language="de" datatype="plaintext">
+		<body>
+			<trans-unit id="1533224074" xml:space="preserve">
+				<source>Captcha validation failed. Please wait some seconds and try again.</source>
+				<target>Die Prüfung des unsichtbaren Captchas ist fehlgeschlagen. Bitte warten Sie ein paar Sekunden und versuchen Sie es dann erneut.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
