@@ -9,8 +9,8 @@ TYPO3:
               'TYPO3.Form:TextMixin': true
             implementationClassName: Wegmeister\SimpleCaptcha\FormElements\SimpleCaptcha
             renderingOptions:
+              templatePathPattern: 'resource://{@package}/Private/Form/{@type}.html'
               layoutPathPattern: 'resource://{@package}/Private/Form/Layouts/{@type}.html'
-              translationPackage: Wegmeister.SimpleCaptcha
               validationErrorTranslationPackage: Wegmeister.SimpleCaptcha
             # You can set a custom wait time (in seconds) for each SimpleCaptcha (time before formular can be submitted).
             properties:

@@ -1,13 +1,12 @@
-{namespace form=TYPO3\Form\ViewHelpers}
-<f:validation.results for="{element.identifier}">
+<f:form.validationResults for="{element.identifier}">
 	<div class="{f:if(condition: validationResults.flattenedErrors, then: 'error')}">
 		<f:render section="field" />
 		<f:if condition="{validationResults.flattenedErrors}">
 			<span class="help-inline">
 				<f:for each="{validationResults.errors}" as="error">
-					{error -> f:translate(id: error.code, arguments: error.arguments, package: element.renderingOptions.validationErrorTranslationPackage, source: 'ValidationErrors')}<br />
+					{error -> f:translate(id: error.code, arguments: error.arguments, package: '{element.renderingOptions.validationErrorTranslationPackage}', source: 'ValidationErrors')}<br />
 				</f:for>
 			</span>
 		</f:if>
 	</div>
-</f:validation.results>
+</f:form.validationResults>
