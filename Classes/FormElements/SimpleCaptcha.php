@@ -15,9 +15,9 @@
 
 namespace Wegmeister\SimpleCaptcha\FormElements;
 
+use TYPO3\Flow\Error\Error;
 use TYPO3\Form\Core\Model\AbstractFormElement;
 use TYPO3\Form\Core\Runtime\FormRuntime;
-use TYPO3\Form\Exception;
 
 /**
  * This is the implementation class of the SimpleCaptcha.
@@ -82,7 +82,7 @@ class SimpleCaptcha extends AbstractFormElement
             $processingRule
                 ->getProcessingMessages()
                 ->addError(
-                    new Exception(
+                    new Error(
                         'Captcha validation failed. Please wait some seconds and try again.',
                         1533224074
                     )
