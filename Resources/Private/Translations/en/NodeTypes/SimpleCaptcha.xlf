@@ -11,6 +11,14 @@
 			<trans-unit id="properties.waitTime.ui.help.message" xml:space="preserve">
 				<source>If the form is submitted faster than the given seconds, validation will fail. This prevents many most bots from submitting successfully.</source>
 			</trans-unit>
+			<trans-unit id="properties.maxTime" xml:space="preserve">
+				<source>Maximum time (in seconds)</source>
+			</trans-unit>
+			<trans-unit id="properties.maxTime.ui.help.message" xml:space="preserve">
+				<source>If the form is submitted after the given seconds, validation will fail. This will prevent bots from using the same time/hash over and over again.
+
+To deactivate, set to "0".</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

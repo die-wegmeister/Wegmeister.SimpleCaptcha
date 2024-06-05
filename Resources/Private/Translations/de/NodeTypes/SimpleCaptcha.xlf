@@ -11,8 +11,20 @@
 				<target>Erforderliche Wartezeit (in Sekunden)</target>
 			</trans-unit>
 			<trans-unit id="properties.waitTime.ui.help.message" xml:space="preserve">
-				<source>If the form is submitted faster than the given seconds, validation will fail. This prevents many most bots from submitting successfully.</source>
+				<source>If the form is submitted faster than the given seconds, validation will fail. This prevents most bots from submitting successfully.</source>
 				<target>Wenn das Formular schneller als die hier angegebenen Sekunden abgeschickt wird, schlägt die Validierung fehl. Dies hindert die meisten Bots am erfolgreichen Absenden des Formulars.</target>
+			</trans-unit>
+			<trans-unit id="properties.maxTime" xml:space="preserve">
+				<source>Maximum time (in seconds)</source>
+				<target>Maximale Zeit (in Sekunden)</target>
+			</trans-unit>
+			<trans-unit id="properties.maxTime.ui.help.message" xml:space="preserve">
+				<source>If the form is submitted after the given seconds, validation will fail. This will prevent bots from using the same time/hash over and over again.
+
+To deactivate, set to "0".</source>
+				<target>Wenn das Formular später als die hier angegebenen Sekunden abgeschickt wird, schlägt die Validierung fehl. Dies verhindert, dass die selbe Zeit/der selbe Hash mehrfach verwendet wird.
+
+Zum deaktivieren auf "0" setzen.</target>
 			</trans-unit>
 		</body>
 	</file>

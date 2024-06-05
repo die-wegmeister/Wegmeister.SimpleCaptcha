@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of the Wegmeister.SimpleCaptcha package.
  *
@@ -73,7 +74,9 @@ class SimpleCaptcha extends AbstractFormElement
         $time = hexdec($elementValue['cts']);
         $properties = $this->getProperties();
 
-        if ($now < $time + $properties['waitTime']
+        if (
+            $now < $time + $properties['waitTime']
+            || ((int)$properties['maxTime'] !== 0 && $now > $time + $properties['maxTime'])
             || sha1($time) !== $elementValue['confirmation']
         ) {
             $processingRule = $this

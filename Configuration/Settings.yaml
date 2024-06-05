@@ -11,9 +11,14 @@ Neos:
             renderingOptions:
               layoutPathPattern: 'resource://{@package}/Private/Form/Layouts/{@type}.html'
               validationErrorTranslationPackage: Wegmeister.SimpleCaptcha
-            # You can set a custom wait time (in seconds) for each SimpleCaptcha (time before formular can be submitted).
             properties:
+              # Time to wait (in seconds) before the formular can be submitted.
               waitTime: 3
+              # Maximum time (in seconds) the formular can be sent.
+              # After that time, the captcha will be invalid and the user 
+              # has to wait for <waitTime> seconds again.
+              # Set to 0 to disable the maximum time.
+              maxTime: 1800 # 30 minutes
   Neos:
     fusion:
       autoInclude:
