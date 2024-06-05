@@ -30,7 +30,7 @@
           minimum: 1
     maxTime:
       type: integer
-      defaultValue: 1800
+      defaultValue: 1800 # 30 minutes
       ui:
         label: i18n
         help:
@@ -41,4 +41,4 @@
         'Neos.Neos/Validation/NotEmptyValidator': {}
         'Neos.Neos/Validation/IntegerValidator': {}
         'Neos.Neos/Validation/NumberRangeValidator':
-          minimum: 1800 # 30 minutes
+          minimum: 0
